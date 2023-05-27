@@ -60,7 +60,8 @@
 
 7. Compute the total test accuracy of the classes which has been trained till then.
 
-<img src="https://github.com/rojinakashefi/LwF-iCaRL-Incremental-Learning/blob/main/images/Lwf.png" width="459" data-align="center">
+
+<img title="" src="https://github.com/rojinakashefi/LwF-iCaRL-Incremental-Learning/blob/main/images/LwF.png" alt="" width="396" data-align="center">
 
 We can see using this technique in first 20 class we have accuracy around 50 percent however in previous technique the accuracy for first 20 class was near 25 percent.
 
