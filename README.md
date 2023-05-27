@@ -28,11 +28,11 @@
    
    We can see **catastrophic forgetting** by getting high results in test accuracy in Step3 and low accuracy in Step4.
    
-   <img title="" src="file:///Users/rojina/Desktop/gradcam-incrementallearning/images/finetuning-2.png" alt="" width="428" data-align="center">
+   <img title="" src="https://github.com/rojinakashefi/GradCam-ResNet-IncrementalLearning/blob/main/images/finetuning-2.png" alt="" width="428" data-align="center">
    
    In the above picture it is only about last 10 classes, we can see the train loss is so low and also the test loss on only the data of 10 last class is so low. Which means the model learned the 10 last class with high accuracy. (Step 3) However we can see the model has forgotten about the 9th first class in below picture. (Step 4)
    
-   <img title="" src="file:///Users/rojina/Desktop/gradcam-incrementallearning/images/finetuning-1.png" alt="" width="433" data-align="center">
+   <img title="" src="https://github.com/rojinakashefi/GradCam-ResNet-IncrementalLearning/blob/main/images/finetuning-1.png" alt="" width="433" data-align="center">
    
    In the above picture we can see in the first iteration which we have trained the model on 10 classes we get high accuracy but in the second iteration testing on whole 20 classes resulted on having lower accuracy, which means the model forgot a bit about the first 10 classes, as we continue we can see in 10 iteration the model accuracy is about 0.1 which means it can't classify the 100 learned classes well and has forgotten about 90 first classes. Also the loss increases as we continue.
 
@@ -60,7 +60,7 @@
 
 7. Compute the total test accuracy of the classes which has been trained till then.
 
-<img title="" src="file:///var/folders/_4/sv16xs3n1w32wvsk4tn5k5k00000gn/T/TemporaryItems/NSIRD_screencaptureui_KU5Mhi/Screenshot%202023-05-25%20at%203.27.30%20PM.png" alt="Screenshot 2023-05-25 at 3.27.30 PM.png" width="459" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/GradCam-ResNet-IncrementalLearning/blob/main/images/LWF" alt="Screenshot 2023-05-25 at 3.27.30 PM.png" width="459" data-align="center">
 
 We can see using this technique in first 20 class we have accuracy around 50 percent however in previous technique the accuracy for first 20 class was near 25 percent.
 
@@ -88,16 +88,16 @@ In this method we use set of exemplars to remember some data from previous class
 
 We can see the accuracy in our 10'th iteration is around 50 percent.
 
-<img title="" src="file:///Users/rojina/Desktop/gradcam-incrementallearning/images/icarl-1.png" alt="" width="342" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/GradCam-ResNet-IncrementalLearning/blob/main/images/icarl-1.png" alt="" width="342" data-align="center">
 
 The individual accuracy for batches decreases since they need to classify classes from pervious batches (exemplars).
 
-<img title="" src="file:///Users/rojina/Desktop/gradcam-incrementallearning/images/icarl-2.png" alt="" width="396" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/GradCam-ResNet-IncrementalLearning/blob/main/images/icarl-2.png" alt="" width="396" data-align="center">
 
 **Herding classifier:**
 
 In 10'th iteration herding has better results than random exemplars.
 
-<img title="" src="file:///Users/rojina/Desktop/gradcam-incrementallearning/images/icarl-3.png" alt="icarl-3.png" width="414" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/GradCam-ResNet-IncrementalLearning/blob/main/images/icarl-3.png" alt="icarl-3.png" width="414" data-align="center">
 
-<img title="" src="file:///Users/rojina/Desktop/gradcam-incrementallearning/images/icarl-4.png" alt="icarl-4.png" width="418" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/GradCam-ResNet-IncrementalLearning/blob/main/images/icarl-4.png" alt="icarl-4.png" width="418" data-align="center">
