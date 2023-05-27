@@ -60,7 +60,7 @@
 
 7. Compute the total test accuracy of the classes which has been trained till then.
 
-<img title="" src="https://github.com/rojinakashefi/GradCam-ResNet-IncrementalLearning/blob/main/images/LWF" alt="Screenshot 2023-05-25 at 3.27.30 PM.png" width="459" data-align="center">
+<img title="" src="https://github.com/rojinakashefi/GradCam-ResNet-IncrementalLearning/blob/main/images/LwF.png" alt="Screenshot 2023-05-25 at 3.27.30 PM.png" width="459" data-align="center">
 
 We can see using this technique in first 20 class we have accuracy around 50 percent however in previous technique the accuracy for first 20 class was near 25 percent.
 
